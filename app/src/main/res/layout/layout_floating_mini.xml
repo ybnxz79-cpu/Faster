@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/bg_floating_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="First AI • Ready"
+            android:textColor="#F3E8FF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnToggleChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHAT"
+            android:textColor="#E9D5FF"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp" />
+
+        <TextView
+            android:id="@+id/btnCloseFloating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✕"
+            android:textColor="#FF6B8B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingHorizontal="6dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCommandLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Say Jaadu or give a command..."
+        android:textColor="#E9D5FF"
+        android:textSize="12sp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_marginTop="6dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutMiniChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/etMiniChat"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:hint="Chat..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B8A9D4"
+            android:textSize="12sp"
+            android:backgroundTint="#C084FC" />
+
+        <Button
+            android:id="@+id/btnMiniSend"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="GO"
+            android:textSize="11sp"
+            android:backgroundTint="#C084FC"
+            android:textColor="#1A0B2E"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+</LinearLayout>

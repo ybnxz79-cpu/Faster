@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121224"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuk Tuk Settings"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Any AI Key (Gemini / OpenAI) + Language + Female Voice"
+            android:textColor="#B8B8D8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="AI API Key (Auto-detects Gemini AIza... or OpenAI sk-...)"
+            android:textColor="#E2E2FF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSettingsApiKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="#22223E"
+            android:hint="Paste Gemini or OpenAI API Key here..."
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8888AA" />
+
+        <CheckBox
+            android:id="@+id/cbShowApiKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Show API Key"
+            android:textColor="#CCCCCC" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Language / ভাষা"
+            android:textColor="#E2E2FF"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSettingsLang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbLangHindi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hindi"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbLangEnglish"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="English"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/rbLangBengali"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="বাংলা (Bengali)"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+        <Switch
+            android:id="@+id/swPreferFemaleVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="Female Voice Mode"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvPitchLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Voice Pitch: 1.22"
+            android:textColor="#E2E2FF" />
+
+        <SeekBar
+            android:id="@+id/sbVoicePitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:max="120"
+            android:progress="72" />
+
+        <TextView
+            android:id="@+id/tvRateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Speaking Speed: 1.02"
+            android:textColor="#E2E2FF" />
+
+        <SeekBar
+            android:id="@+id/sbVoiceRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:max="150"
+            android:progress="52" />
+
+        <Button
+            android:id="@+id/btnTestFemaleVoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#3949AB"
+            android:text="Test Voice Now"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnSaveSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#00897B"
+            android:text="Save Settings"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

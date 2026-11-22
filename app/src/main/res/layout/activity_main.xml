@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_beautiful_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FIRST AI"
+            android:gravity="center"
+            android:textColor="#F3E8FF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Created by Anshu • Say Jaadu to start magic"
+            android:gravity="center"
+            android:textColor="#D8B4FE"
+            android:textSize="13sp"
+            android:layout_marginBottom="20dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="18dp">
+
+            <RadioButton
+                android:id="@+id/rbHindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hindi"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#C084FC"
+                android:layout_marginEnd="28dp" />
+
+            <RadioButton
+                android:id="@+id/rbEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textColor="#FFFFFF"
+                android:buttonTint="#C084FC"
+                android:checked="true" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnStartAI"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="START BACKGROUND AI"
+            android:backgroundTint="#9333EA"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/bg_chat_box">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIRECT CHAT"
+                android:textColor="#E9D5FF"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvMainChatOutput"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="Hi! Ask me anything or say Jaadu..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:scrollbars="vertical"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/etMainChatInput"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="Type a message or command..."
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B8A9D4"
+                    android:backgroundTint="#C084FC"
+                    android:paddingHorizontal="8dp" />
+
+                <Button
+                    android:id="@+id/btnMainSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="SEND"
+                    android:backgroundTint="#C084FC"
+                    android:textColor="#1A0B2E"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
